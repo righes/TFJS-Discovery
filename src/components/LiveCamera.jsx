@@ -21,11 +21,17 @@ const LiveCamera = () => {
         }
     };
     const stopCamera = () => {
-        if (stream) {
-            stream.getTracks().forEach((track) => track.stop());
+        // if (stream) {
+        //     stream.getTracks().forEach((track) => track.stop());
+        //     videoRef.current.srcObject = null;
+        //     setIsCameraOn(false);
+        // }
+        if (videoRef.current && videoRef.current.srcObject) {
+            videoRef.current.srcObject.getTracks().forEach((track) => TrackEvent.stop());
             videoRef.current.srcObject = null;
-            setIsCameraOn(false);
         }
+        setStream(null);
+        setIsCameraOn(false);
     };
     // useEffect(() => {
     //     const getCamera = async () => {
