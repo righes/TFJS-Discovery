@@ -10,3 +10,27 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# ------------------------------------------------------------------
+
+# LiveTFJS
+A React project to explore and deploy live Tensorflow.js models 
+## Getting Started
+'''bash
+npm install
+npm run dev 
+
+
+# Notes :
+use of : .jsx = JS XML 
+
+------------------ to run 
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+npm run dev
+ or 
+ File > Pref > Setting > "terminal.integrated.defaultProfile.windows": "Command Prompt"
+
+
+
