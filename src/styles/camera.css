@@ -1,0 +1,46 @@
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 640px;
+  height: 480px;
+}
+
+video, canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+canvas {
+  z-index: 10;
+  pointer-events: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #008cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #006fd0;
+}
+
